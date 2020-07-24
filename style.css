@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
 * {
     box-sizing: border-box;
+}
+
+#logo {
+    height: 5em;
+    opacity: none;
 }
 
 body {
@@ -12,19 +18,28 @@ ul {
     list-style: none;
 }
 
+
 a {
     text-decoration: none;
     color: white;
 }
 
 button {
-    padding: 10px 15px;
+    padding: 15px 35px;
     border-radius: 8px;
     font-weight: bold;
+    font-size: 90%;
+
     border: 0;
     background: #1D61DD;
     color: white;
     font-family: 'Montserrat', sans-serif;
+}
+
+button:hover {
+    background: #1D61DD;
+    opacity: 0.9;
+    transform: scale(1.1); 
 }
 
 header {
@@ -32,11 +47,24 @@ header {
     background: no-repeat center/cover url('assets/header-image.jpg');
 }
 
-header nav {
+
+nav {
+    background: rgba(241, 241, 241, .9);
     display: flex;
-    justify-content: space-between;
-    margin: auto 30px;
-    color: white;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    color: black;
+}
+
+.menu-link {
+    text-decoration: none;
+    color:#57656E;
+}
+
+.menu-link:hover {
+    color: #FD9024;
+    transform: scale(3.1)
 }
 
 header nav p {
@@ -44,6 +72,7 @@ header nav p {
 }
 
 header nav ul {
+    color: black;
     display: flex;
 }
 
@@ -52,7 +81,7 @@ header nav ul li {
 }
 
 .header-content {
-    max-width: 400px;
+    width: 60%;
     margin: 150px auto;
     text-align: center;
     color: white;
@@ -60,10 +89,14 @@ header nav ul li {
 
 .header-content h1 {
     margin-bottom: 10px;
-    font-size: 4rem;
+    font-size: 3.8rem;
     color: white;
 }
 
+#teste {
+    height: 1000px;
+}
+  
 /* Section - Nosso Time */
 #nosso-time {
     display: flex;
@@ -120,4 +153,3 @@ header nav ul li {
     margin: 0;
     
 }
-
